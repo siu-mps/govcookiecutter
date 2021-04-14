@@ -27,3 +27,8 @@ repos:
         args: ["--maxkb=5120"]
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
+    repo: https://github.com/kynan/nbstripout
+    rev: master
+    hooks:
+        - id: nbstripout
+        files: ".ipynb"
